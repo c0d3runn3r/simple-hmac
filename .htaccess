@@ -1,0 +1,6 @@
+
+
+# Rewrite resources as query strings
+RewriteEngine on
+RewriteBase /simple-hmac/
+RewriteRule resource/(.*) service.php?resource=$1 [L]
